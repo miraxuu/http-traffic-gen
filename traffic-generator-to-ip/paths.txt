@@ -1,0 +1,10 @@
+/homepage
+/information
+/login
+/api/data
+/products
+/about-us
+/contact
+/help
+/search?q=honeypot
+/documentation

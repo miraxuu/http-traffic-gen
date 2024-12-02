@@ -25,7 +25,7 @@ Save your paths in `paths.txt` or another file of your choice. Specify the file 
 Run the traffic generator with the following command:
 
 ```bash
-python traffic_generator.py -H <host> -p <port> -i <interval> -f <path_to_file>
+python traffic_generator.py -H <host> -p <port> -i <interval> -f <path_to_file> -m <methods>
 ```
 
 ### Arguments:

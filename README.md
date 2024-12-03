@@ -25,7 +25,7 @@ Save your paths in `paths.txt` or another file of your choice. Specify the file 
 Run the traffic generator with the following command:
 
 ```bash
-python traffic_generator.py -H <host> -p <port> -i <interval> -f <path_to_file>
+python traffic_generator.py -H <host> -p <port> -i <interval> -f <path_to_file> -m <methods>
 ```
 
 ### Arguments:
@@ -33,8 +33,16 @@ python traffic_generator.py -H <host> -p <port> -i <interval> -f <path_to_file>
 - `-p` or `--port`: Target port (e.g., `8081`).
 - `-i` or `--interval`: Interval between requests in seconds (default: `1.0`).
 - `-f` or `--file`: Path to the file containing custom paths (default: `paths.txt`).
+- `-m` or `--methods`: Specify methods (e.g., `GET` or `GET POST`).
+- `-v` or `--verbose`: Enable verbose mode.
 
 ### Example:
 ```bash
-python traffic_generator.py -H 192.168.1.100 -p 8081 -i 0.5 -f custom_paths.txt
+python traffic_generator.py -H 192.168.1.100 -p 8081 -i 0.5 -f custom_paths.txt -m GET -v
+```
+
+### username-pass-gen.py & sql-query-gen.py
+```bash
+python username-pass-gen.py <ip> <port>
+python sql-query-gen.py <ip> <port>
 ```
